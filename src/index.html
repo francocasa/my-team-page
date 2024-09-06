@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <title>404 Not Found</title>
+    <title>404 Not Found</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .item {
+        color: rgb(10, 7, 7);
+        padding: 20px;
+        font-size: 20px;
+        height: 50%;
+        width: 30%;
+      }
+      .item:nth-child(odd) {
+        align-content: flex-start;
+      }
+      .item:nth-child(even) {
+        align-content: flex-end;
+      }
+      .container img {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <h1>a</h1>
+        <img src="../assets/photo_1.png" alt="" />
+      </div>
+      <div class="item">
+        <h1>a</h1>
+        <img src="../assets/photo_2.png" alt="" />
+      </div>
+      <div class="item"><img src="../assets/photo_3.png" alt="" /></div>
+      <div class="item"><img src="../assets/photo_4.png" alt="" /></div>
+      <div class="item"><img src="../assets/photo_5.png" alt="" /></div>
+      <div class="item"><img src="../assets/photo_6.png" alt="" /></div>
+    </div>
+  </body>
 </html>
